@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C97D29762A07FE9C0013966B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D29752A07FE9C0013966B /* AppDelegate.swift */; };
 		C97D29782A07FE9C0013966B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D29772A07FE9C0013966B /* SceneDelegate.swift */; };
-		C97D297A2A07FE9C0013966B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D29792A07FE9C0013966B /* ViewController.swift */; };
+		C97D297A2A07FE9C0013966B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D29792A07FE9C0013966B /* StartViewController.swift */; };
 		C97D29802A07FE9C0013966B /* Simulator_virus_spread.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C97D297E2A07FE9C0013966B /* Simulator_virus_spread.xcdatamodeld */; };
 		C97D29822A07FE9D0013966B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97D29812A07FE9D0013966B /* Assets.xcassets */; };
 		C97D29852A07FE9D0013966B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97D29832A07FE9D0013966B /* LaunchScreen.storyboard */; };
+		C97D29902A0804710013966B /* TitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D298F2A0804710013966B /* TitleTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C97D29722A07FE9C0013966B /* Simulator virus spread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simulator virus spread.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97D29752A07FE9C0013966B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97D29772A07FE9C0013966B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C97D29792A07FE9C0013966B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C97D29792A07FE9C0013966B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		C97D297F2A07FE9C0013966B /* Simulator_virus_spread.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Simulator_virus_spread.xcdatamodel; sourceTree = "<group>"; };
 		C97D29812A07FE9D0013966B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C97D29842A07FE9D0013966B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C97D29862A07FE9D0013966B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C97D298F2A0804710013966B /* TitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +80,18 @@
 		C97D298D2A07FF740013966B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C97D29792A07FE9C0013966B /* ViewController.swift */,
+				C97D29792A07FE9C0013966B /* StartViewController.swift */,
+				C97D298E2A0804690013966B /* Views */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C97D298E2A0804690013966B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C97D298F2A0804710013966B /* TitleTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97D297A2A07FE9C0013966B /* ViewController.swift in Sources */,
+				C97D29902A0804710013966B /* TitleTextField.swift in Sources */,
+				C97D297A2A07FE9C0013966B /* StartViewController.swift in Sources */,
 				C97D29802A07FE9C0013966B /* Simulator_virus_spread.xcdatamodeld in Sources */,
 				C97D29762A07FE9C0013966B /* AppDelegate.swift in Sources */,
 				C97D29782A07FE9C0013966B /* SceneDelegate.swift in Sources */,
