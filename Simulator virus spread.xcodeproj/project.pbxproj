@@ -14,6 +14,12 @@
 		C97D29822A07FE9D0013966B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97D29812A07FE9D0013966B /* Assets.xcassets */; };
 		C97D29852A07FE9D0013966B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97D29832A07FE9D0013966B /* LaunchScreen.storyboard */; };
 		C97D29902A0804710013966B /* TitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D298F2A0804710013966B /* TitleTextField.swift */; };
+		C97D29942A080C380013966B /* SimulateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D29932A080C380013966B /* SimulateViewController.swift */; };
+		C97D29992A0BD6800013966B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D29952A0BD6800013966B /* Extensions.swift */; };
+		C97D299A2A0BD6800013966B /* ScalingLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D29962A0BD6800013966B /* ScalingLayoutProtocol.swift */; };
+		C97D299B2A0BD6800013966B /* ScalingGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D29972A0BD6800013966B /* ScalingGridLayout.swift */; };
+		C97D299C2A0BD6800013966B /* ZoomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D29982A0BD6800013966B /* ZoomCollectionView.swift */; };
+		C97D29A12A0BF24A0013966B /* HumanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D29A02A0BF24A0013966B /* HumanCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		C97D29842A07FE9D0013966B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C97D29862A07FE9D0013966B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C97D298F2A0804710013966B /* TitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextField.swift; sourceTree = "<group>"; };
+		C97D29932A080C380013966B /* SimulateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateViewController.swift; sourceTree = "<group>"; };
+		C97D29952A0BD6800013966B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C97D29962A0BD6800013966B /* ScalingLayoutProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalingLayoutProtocol.swift; sourceTree = "<group>"; };
+		C97D29972A0BD6800013966B /* ScalingGridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalingGridLayout.swift; sourceTree = "<group>"; };
+		C97D29982A0BD6800013966B /* ZoomCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomCollectionView.swift; sourceTree = "<group>"; };
+		C97D29A02A0BF24A0013966B /* HumanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +92,8 @@
 		C97D298D2A07FF740013966B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C97D29792A07FE9C0013966B /* StartViewController.swift */,
-				C97D298E2A0804690013966B /* Views */,
+				C97D29922A080C1B0013966B /* Simulate */,
+				C97D29912A080C130013966B /* Start */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -92,6 +104,36 @@
 				C97D298F2A0804710013966B /* TitleTextField.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C97D29912A080C130013966B /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				C97D29792A07FE9C0013966B /* StartViewController.swift */,
+				C97D298E2A0804690013966B /* Views */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		C97D29922A080C1B0013966B /* Simulate */ = {
+			isa = PBXGroup;
+			children = (
+				C97D29932A080C380013966B /* SimulateViewController.swift */,
+				C97D29A02A0BF24A0013966B /* HumanCollectionViewCell.swift */,
+				C97D299D2A0BEB5F0013966B /* ZoomCollectionView */,
+			);
+			path = Simulate;
+			sourceTree = "<group>";
+		};
+		C97D299D2A0BEB5F0013966B /* ZoomCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C97D29952A0BD6800013966B /* Extensions.swift */,
+				C97D29972A0BD6800013966B /* ScalingGridLayout.swift */,
+				C97D29962A0BD6800013966B /* ScalingLayoutProtocol.swift */,
+				C97D29982A0BD6800013966B /* ZoomCollectionView.swift */,
+			);
+			path = ZoomCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +207,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97D29902A0804710013966B /* TitleTextField.swift in Sources */,
+				C97D29A12A0BF24A0013966B /* HumanCollectionViewCell.swift in Sources */,
 				C97D297A2A07FE9C0013966B /* StartViewController.swift in Sources */,
+				C97D29942A080C380013966B /* SimulateViewController.swift in Sources */,
 				C97D29802A07FE9C0013966B /* Simulator_virus_spread.xcdatamodeld in Sources */,
+				C97D299B2A0BD6800013966B /* ScalingGridLayout.swift in Sources */,
+				C97D299C2A0BD6800013966B /* ZoomCollectionView.swift in Sources */,
 				C97D29762A07FE9C0013966B /* AppDelegate.swift in Sources */,
 				C97D29782A07FE9C0013966B /* SceneDelegate.swift in Sources */,
+				C97D29992A0BD6800013966B /* Extensions.swift in Sources */,
+				C97D299A2A0BD6800013966B /* ScalingLayoutProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

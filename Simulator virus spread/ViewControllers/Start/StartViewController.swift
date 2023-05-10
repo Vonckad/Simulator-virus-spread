@@ -9,7 +9,7 @@ import UIKit
 
 class StartViewController: UIViewController {
     
-    private lazy var groupSizeTextField = TitleTextField(title: "Количество людей в моделируемой группе")
+    private lazy var groupSizeTextField = TitleTextField(title: "Количество людей в моделируемой группе", text: "1000")
     private lazy var infectionFactorTextField = TitleTextField(title: "Количество людей, которое может быть заражено одним человеком при контакте")
     private lazy var recalculationPeriodTextField = TitleTextField(title: "Период пересчёта количества заражённых людей")
     
@@ -38,7 +38,9 @@ class StartViewController: UIViewController {
     
     @objc
     private func startButtonAction() {
-        print("startButtonAction")
+        guard let count = Int(groupSizeTextField.text ?? "") else { return }
+        let vc = SimulateViewController(coutn: count)
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     private func setupUI() {

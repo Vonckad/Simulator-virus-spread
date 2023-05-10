@@ -27,6 +27,9 @@ class TitleTextField: UIView {
     }()
     
     var delegate: UITextFieldDelegate?
+    var text: String? {
+        return textField.text
+    }
     private var keyboardType: UIKeyboardType
     
     init(title: String, keyboardType: UIKeyboardType = .numberPad, text: String? = nil, delegate: UITextFieldDelegate? = nil) {
